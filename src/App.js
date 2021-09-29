@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import FriendDetail from './components/FriendDetail/FriendDetail';
 import Culture from './components/Culture/Culture';
+import PostDetail from './components/PostDetail/PostDetail';
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
           </Route>
           <Route path="/friend/:friendId">
             <FriendDetail></FriendDetail>
+          </Route>
+          <Route path="/post/:postId">
+            <PostDetail></PostDetail>
           </Route>
           <Route exact path="/about">
             <About></About>
